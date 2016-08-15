@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Nerds</title>
+    <meta charset="utf-8">
+    <title>Nerds</title>
 </head>
 <body>
-  	<header class="main-header">
-  		<div class="container">
-        	<div class="head-logo-menu">
-            	<div class="head-logo">
-                	<img src="http://placehold.it/150x100" alt="Логотип" height="50" width="50">
-            	</div>
-            	<nav class="main-navigation">
-                	<ul>
-                    	<li>
-                        	<a href="#">Студия</a>
-                    	</li>
-                    	<li>
-                        	<a href="#">Клиенты</a>
-                    	</li>
-                    	<li>
-                        	<a href="#">Магазин</a>
-                    	</li>
-                    	<li>
-                        	<a href="#">Контакты</a>
-                    	</li>
+    <header class="main-header">
+        <div class="container">
+            <div class="head-logo-menu">
+                <div class="head-logo">
+                    <img src="http://placehold.it/150x100" alt="Логотип" height="50" width="50">
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
                     </ul>
                 <div class="user-block">
-                	<a class="box" href="#">Корзина</a>
-            	</div>
-            	</nav>
-        	</div>
-        	<h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
-		</div>
+                    <a class="box" href="#">Корзина</a>
+                </div>
+                </nav>
+            </div>
+            <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+        </div>
     </header>
     <main class="container">
         <div class="catalog-content">
@@ -47,71 +47,56 @@
                     <fieldset>
                         <legend>Сетка:</legend>
                         <br>
-                        <label>
-                            <input type="radio" name="grid" checked value="adaptive">
-                            Адаптивная
-                        </label>
+                        <label for="adaptive-field">Адаптивная</label>
+                        <input type="radio" id="adaptive-field" name="grid" checked value="adaptive">
                         <br>
-                        <label>
-                            <input type="radio" name="grid" value="fix">
-                            Фиксированная
-                        </label>
+                        <label for="fix-field">Фиксированная</label>
+                        <input type="radio" id="fix-field" name="grid" value="fix">
                         <br>
-                        <label>
-                            <input type="radio" name="grid" value="flex">
-                            Резиновая
-                        </label>
+                        <label for="flex-field">Резиновая</label>
+                        <input type="radio" id="flex-field" name="grid" value="flex">
                         <br>
                     </fieldset>
                     <fieldset>
                         <legend>ГРУППЫ ТОВАРОВ:</legend>
                         <br>
-                        <label>
-                            <input type="checkbox" name="slider" >
-                            Слайдер
-                        </label>
+                        <label for="slider-field">Слайдер</label>
+                        <input type="checkbox" id="slider-field" name="slider">
                         <br>
-                        <label>
-                            <input type="checkbox" name="block">
-                            Блок преимуществ
-                        </label>
+                        <label for="block-field">Блок преимуществ</label>
+                        <input type="checkbox" id="block-field" name="block">
                         <br>
-                        <label>
-                            <input type="checkbox" name="news">
-                            Новости
-                        </label>
-                        <label>
-                            <input type="checkbox" name="galery">
-                            Галерея
-                        </label>
+                        <label for="news-field">Новости</label>
+                        <input type="checkbox" id="news-field" name="news">
                         <br>
-                        <label>
-                            <input type="checkbox" name="box">
-                            Корзина
-                        </label>
+                        <label for="galery-field">Галерея</label>
+                        <input type="checkbox" id="galery-field" name="galery">
+                        <br>
+                        <label for="box-field">Корзина</label>
+                        <input type="checkbox" id="box-field" name="box">
                         <br>
                     </fieldset>
-                    <a href="#" class="sidebar-button">Показать</a>
+                    <input type="submit" value="Показать">
                 </form>
             </div>
             <div class="shop">
-                <ul class="sort">
-                    <li>
-                        Сортировать:
-                    </li>
-                    <li>
-                        <a href="#">По цене</a>
-                    </li>
-                    <li>
-                        <a href="#">По типу</a>
-                    </li>
-                    <li>
-                        <a href="#">По цене</a>
-                    </li>
-                    <li>
-                        <a href="#">По функционалу</a>
-                    </li>
-                </ul>
+                <div class="sort">
+                    <div class="sort-type">
+                        <ul>
+                            <li>Сортировать:</li>
+                            <li><a href="#">По цене</a></li>
+                            <li><a href="#">По типу</a></li>
+                            <li><a href="#">По цене</a></li>
+                            <li><a href="#">По функционалу</a></li>
+                        </ul>
+                    </div>
+                    <div class="sort-direction">
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="site-preview">
                     <div class="preview">
                         <a href="#">
