@@ -37,9 +37,7 @@ li {
     background-size: 10px;
 }
 
-.hidden {
-    display: none;
-}
+
 
  /* ------------Фон для сетки----------------- */
 .main-header {
@@ -407,7 +405,7 @@ li {
   position: relative;
   background: no-repeat center url(../img/map.jpg);
   min-height: 415px;
-  
+  background-size: 100% auto;
 }
 
 .footer-contacts {
@@ -476,19 +474,27 @@ li {
     min-height:270px;
     margin-right: 80px;
     margin-bottom: 80px;
-
+    
+    position: relative;
 }
 
 .preview:nth-child(2n){
   margin-right:0;
 }
 
-.preview-box{
+.preview-box {
     width:200px;
     min-height:200px;
     margin:20px;
     margin-top:50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
 
+}
+.preview:hover .preview-box{
+  display: block;
 }
 
 .paginator {
